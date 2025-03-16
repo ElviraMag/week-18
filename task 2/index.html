@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Планировщик задач</title>
+  </head>
+  <body>
+    <style>
+      #todo {
+        text-align: center;
+        margin-top: 5%;
+      }
+
+      #form {
+        margin-left: 38%;
+      }
+
+      #taskManager {
+        width: 25%;
+      }
+
+      #list {
+        text-align: center;
+        margin-left: -4%;
+      }
+
+      #buttonAdd {
+        width: 31%;
+        color: aliceblue;
+        background-color: green;
+        border-color: aliceblue;
+      }
+
+      #clearButton {
+        margin-left: 56%;
+        width: 20%;
+        color: aliceblue;
+        background-color: green;
+        border-color: aliceblue;
+      }
+      #noTask {
+        text-align: center;
+        color: rgb(184, 184, 184);
+      }
+    </style>
+    <main>
+      <h2 id="todo">Добавить задачу</h2>
+      <form id="form">
+        <input type="text" placeholder="Задача" id="taskManager" />
+        <button id="buttonAdd">Добавить</button>
+      </form>
+      <h2 id="list">Список задач</h2>
+      <div id="form2">
+        <ul id="taskList"></ul>
+        <p id="noTask" class="hidden">Нет задач</p>
+        <button id="clearButton">Очистить список задач</button>
+      </div>
+    </main>
+
+    <script src="index2.js"></script>
+  </body>
+</html>
